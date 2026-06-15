@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 큐 런타임 파일 (구조만 git에 유지)
+tools/queue/inbox/*.json
+tools/queue/outbox/*.json
+
+# ingest 처리 완료 원본 (구조만 git에 유지)
+raw/.processed/*
+!raw/.processed/.gitkeep
+!tools/queue/inbox/.gitkeep
+!tools/queue/outbox/.gitkeep
