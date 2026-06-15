@@ -1,14 +1,14 @@
 # LLM Wiki — Agentic Coding & LLM Workflow
 
-> 최종 산출물 (과제3): [하네스 + LLM Wiki + 시각화 도구]가 하나로 통합된, clone 후 바로
+> [하네스 + LLM Wiki + 시각화 도구]가 하나로 통합된, clone 후 바로
 > 실행 가능한 LLM Wiki 프로토타입입니다.
 
-이 repo를 clone한 뒤 **`raw/`에 자기 자료 1건을 넣고 아래 0번 가이드를 따르면, 30분 안에
-자신만의 LLM Wiki 첫 페이지를 만들고 화면에서 확인**할 수 있습니다. (이미 12개 페이지로
+이 repo를 clone한 뒤 `raw/`에 자기 자료 1건을 넣고 아래 0번 가이드를 따르면, 30분 안에
+자신만의 LLM Wiki 첫 페이지를 만들고 화면에서 확인할 수 있습니다. (이미 12개 페이지로
 구성된 "Agentic Coding & LLM Workflow" 위키가 즉시 사용 가능한 상태로 포함되어 있습니다.)
 
-**핵심 특징**: 에이전트의 LLM 호출은 코드에 API Key를 넣지 않습니다. **로컬 CLI
-(`claude`/`codex`/`gemini`)를 subprocess로 호출하는 "메시지 인식 Shell 스크립트"**
+핵심 특징: 에이전트의 LLM 호출은 코드에 API Key를 넣지 않습니다. 로컬 CLI
+(`claude`/`codex`/`gemini`)를 subprocess로 호출하는 "메시지 인식 Shell 스크립트"
 (`harness/hooks/watch-raw.sh`)를 통해서만 이루어지며, CLI가 없는 환경에서는 규칙 기반
 폴백(`engine: fallback`)으로 동일한 인터페이스가 동작합니다.
 
@@ -209,8 +209,8 @@ cd tools && node dist/cliValidate.js
 
 ## 7. demo/ — 실제 동작 화면
 
-`demo/mvp_screenshot.png`는 정적 목업이 아니라, 위 0번 Quick Start를 **실제로 실행한
-화면**입니다:
+`demo/mvp_screenshot.png`는 정적 목업이 아니라, 위 0번 Quick Start를 실제로 실행한
+화면입니다:
 
 1. `raw/context-engineering.txt`를 `watch-raw.sh`로 ingest → `wiki/pages/context-engineering.md`
    (status: draft) 생성, `wiki_validate: ok=true`
